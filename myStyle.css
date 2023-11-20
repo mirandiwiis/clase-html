@@ -23,8 +23,12 @@ a:hover {
     text-decoration: none;
 }
 
+a {
+    color: #1F1F1F;
+}
 
-/*no se*/
+
+/*colors */
 
 .color-red {
     color: #FC3314;
@@ -46,13 +50,19 @@ a:hover {
     background-color: #1F1F1F;
 }
 
-
-.logo-topbar {
-    height: 45px;
+.bg-color-white {
+    background-color: white;
+    
 }
 
 
+
 /* Estilos de texto */
+
+h1 {
+    font-size: 20px;
+    font-weight: 400;
+}
 h2 {
     font-size: 48px;
 }
@@ -89,6 +99,7 @@ h3 {
 
 dd {
     font-size: 64px;
+    font-weight: bold;
 }
 
 
