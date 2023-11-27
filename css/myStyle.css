@@ -3,48 +3,146 @@
     src: url(Montserrat-VariableFont_wght.ttf);
 }
 
-body {
+html {
     font-family: Montserrat;
+    font-size: 100%;
+    font-weight: 300;
+    color: hsl(0, 0%, 12%);
+    line-height: 1.5;
 }
 
-/*Links style*/
+body {
+    margin: 0;
+}
 
-a:link {
-    text-decoration: none;
+/*Encabezados*/
+    h1,
+    .h1 {
+        font-size: 48px;
+        font-weight: bold;
     }
+
+        .h1 span {
+            color: #FC3314;
+        }
+
+    h2,
+    .h2 {
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    h3,
+    .h3 {
+        font-size: 20px;
+        font-weight: 300; 
+    }
+
+
+ul {
+    list-style-type: none;
+}
+
+
 
 a:visited {
+    color: hsl(0, 0%, 20%);
+}
+
+.bg-black {
+    background-color: hsl(0, 0%, 12%);
+}
+
+.bg-pink {
+    background-color: #FFD4D0;
+}
+
+.text-white {
+    color: white;
+}
+
+.btn {
+    color: white;
     text-decoration: none;
+    font-weight: bold;
+    background-color: #1F1F1F;
+}
+
+.btn:visited {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #1F1F1F;
+}
+
+    .btn--white {
+        color: #1F1F1F;
+        text-decoration: none;
+        font-weight: bold;
+        background-color: white;
     }
 
-a:hover {
-    text-decoration: none;
-}
-
-a {
-    color: #1F1F1F;
-}
-
-
-
-
-/*top bar*/
+    .btn--white:visited {
+        color: #1F1F1F;
+        text-decoration: none;
+        font-weight: bold;
+        background-color: white;
+    }
 
 .top-bar {
     background-color: #FFD4D0;
-    font-size: 18pt;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+    .main-nav__link {
+        color: #1F1F1F;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+}
+
+    .top-bar__logo {
+        max-width: 180px;
+    }
+
+    .top-bar__logo img {
+
+    }
+
+    .top-bar__nav {
+        flex: 1;
+    }
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+}
+
+/*top bar
+
+.top-bar {
+    background-color: #FFD4D0;
+    font-size: 18px;
     font-weight: bold;
     display: flex;
     align-items: center;
 
 }
+*/
 
-.top-bar__button {
-    background-color: #1F1F1F;
-    color: white;
-}
 
-/*header*/
+/*header
 
 .header {
     background-color: #FFD4D0;
@@ -56,15 +154,7 @@ a {
     width: 457px;
 }
 
-.header__title {
-    font-size: 20pt;
-    font-weight: 300;
-}
 
-.header__subtitle {
-    font-size: 48pt;
-    font-weight: bold;
-}
 
 .header__subtitle span {
     color: #FC3314;
@@ -81,22 +171,6 @@ a {
 
 /*About me*/
 
-.about-me {
-    background-color: #1F1F1F;
-    color: white;
-    text-align: center;
-    margin: 0;
-}
-
-.about-me__title {
-    font-size: 36pt;
-    font-weight: bold
-}
-
-.about-me__text {
-    font-size: 16pt;
-    font-weight: 300;
-}
 
 .stats__tittle {
     font-size: 18pt;
@@ -110,6 +184,7 @@ a {
 }
 
 /*Services*/
+
 .services {
     text-align: center;
     margin: 0;
@@ -122,6 +197,25 @@ a {
 .services__text {
     font-size: 16pt;
     font-weight: 300;
+}
+
+.services-list__tittle {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.services-list__text {
+    font-size: 14pt;
+    font-weight: 300;
+}
+
+.portfolio {
+    text-align: center;
+    margin: 0;
+}
+
+.portfolio_bg-pink {
+    background-color: #FFD4D0;
 }
 /*colors 
 

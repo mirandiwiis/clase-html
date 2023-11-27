@@ -10,40 +10,39 @@
 <body id="all">
 
     <div class="top-bar">
-        <div>
+        <div class="top-bar__logo">
             <img src="../images/Logo.svg" alt="logo">
         </div>
 
-        <nav>
-            <a href="">About</a>
-            <a href="">Services</a>
-            <a href="">Portfolio</a>
-            <a href="">Blog</a>
+        <nav class="main-nav top-bar__nav">
+            <a class="main-nav__link" href="">About</a>
+            <a class="main-nav__link" href="">Services</a>
+            <a class="main-nav__link" href="">Portfolio</a>
+            <a class="main-nav__link" href="">Blog</a>
         </nav>
 
-        <div>
-            <a class="top-bar__button" href="">Let's Talk</a>
-        </div>  
+
+        <a class="btn" href="">Let's Talk</a>
     </div>
 
-    <header class="header">
-        <div class="header__content">
-            <h1 class="header__title">UX Designer</h1>
-            <h2 class="header__subtitle">Hi There, I'm <span class="text-red">Sarah Jones</span></h2>
-            <p class="header__text">Welcome to my portfolio of captivationg digital experiences. Explore my work and let's create something extraordinary together.</p>
+    <header class="header-home bg-pink">
+        <div>
+            <h1 class="h3">UX Designer</h1>
+            <h2 class="h1">Hi There, I'm <span class="text-red">Sarah Jones</span></h2>
+            <p>Welcome to my portfolio of captivationg digital experiences. Explore my work and let's create something extraordinary together.</p>
 
-            <a href="">Hire Me</a>
-            <a href="">Portfolio</a>
+            <a class="btn" href="">Hire Me</a>
+            <a class="btn--white" href="">Portfolio</a>
         </div>
 
-        <div class="header__image">
+        <div>
             <img src="../images/sarah.png" alt="UX logotype and designer">
         </div>
     </header>
 
-    <section class="about-me">
-        <h3 class="about-me__title">About Me</h3>
-        <p class="about-me__text">I'm Sarah Jones, a UI/UX designer dedicated to crafting intuitive and visually stunning digital experiences. With a passion for user-centric design. I transform ideas into functional and beautiful interfaces. Let's colaborate and shape the future of design together </p>
+    <section class="bg-black text-white">
+        <h3 class="h2">About Me</h3>
+        <p>I'm Sarah Jones, a UI/UX designer dedicated to crafting intuitive and visually stunning digital experiences. With a passion for user-centric design. I transform ideas into functional and beautiful interfaces. Let's colaborate and shape the future of design together </p>
         <dl class="stats">
             <dt class="stats__title">Projects Done</dt>
             <dd class="stats__numbers">502</dd>
@@ -56,39 +55,39 @@
         </dl>
     </section>
 
-    <section class="services">
-        <h3 class="services__title">Services</h3>
-        <p class="services__text">Explore my design srevices, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
+    <section >
+        <h3 class="h2">Services</h3>
+        <p>Explore my design srevices, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
         <ul>
             <li>
                 <img src="../images/design-vercor.svg" alt="wheel">
-                <h6>Design</h6>
+                <h6 >Design</h6>
                 <p>I specialize in web development and design, creating visually appealing, user-friendlydigital experiences.</p>
             </li>
 
             <li>
                 <img src="../images/branding.svg" alt="circle">
-                <h6>Brandign</h6>
-                <p >I'm branding expert, crefting unique visual identities that tell your story and resonate with your audience</p>
+                <h6 >Brandign</h6>
+                <p>I'm branding expert, crefting unique visual identities that tell your story and resonate with your audience</p>
             </li>
 
             <li>
                 <img src="../images/ux-research.svg" alt="search">
-                <h6>UX Research</h6>
-                <p >"I specialize in user experience research, colaborating on web development, and ensuring user friendly digital products.</p>
+                <h6 class="services-list__tittle">UX Research</h6>
+                <p class="services-list__text">"I specialize in user experience research, colaborating on web development, and ensuring user friendly digital products.</p>
             </li>
 
             <li>
                 <img src="../images/usability.svg" alt="check list">
-                <h6>Usability Testing</h6>
-                <p >I perform usability testing and optimize designs websites based on real-user feedback for seamless interactions.</p>
+                <h6 class="services-list__tittle">Usability Testing</h6>
+                <p class="services-list__text">I perform usability testing and optimize designs websites based on real-user feedback for seamless interactions.</p>
             </li>
         </ul>
     </section>
 
-    <section>  
+    <section class="section">  
         <div>
-            <h3>My Portfolio</h3>
+            <h3 class="h2">My Portfolio</h3>
             <p>Explore my design services, from user interface and experience to prototyping and testing. Let's craft exceptional digitalexperiences together.</p>
         </div>
 
@@ -134,7 +133,7 @@
     </section>
 
     <section>
-        <h3>Core Design Skills</h3>
+        <h3 class="h2">Core Design Skills</h3>
         <p>I excel in essential design skills, creating visually stunning and functional</p>
 
         <label for="interactiondesign"> Interaction design </label>
@@ -158,7 +157,7 @@
 
     <section>
         <div>
-            <h3>Get in Touch</h3>
+            <h3 class="h2">Get in Touch</h3>
             <p>Have a question or a project in mind? I'd love to hear from you. Let's chat and make something amazing together.</p>
 
             <ul>
@@ -200,14 +199,14 @@
                 <label for="textBig">Tu mensaje</label>
                 <textarea name="" id="textBig" maxlength="300" cols="30" rows="10" placeholder="Your message"></textarea>
 
-                <button>Send Message</button>
+                <button class="btn">Send Message</button>
             </form>
 
             
         </div>
     </section>
 
-    <footer>
+    <footer class="bg-black">
         <ul>
             <li>
                 <a href="">About</a>
