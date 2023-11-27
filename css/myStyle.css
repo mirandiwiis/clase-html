@@ -26,7 +26,104 @@ a {
 }
 
 
-/*colors */
+
+
+/*top bar*/
+
+.top-bar {
+    background-color: #FFD4D0;
+    font-size: 18pt;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+}
+
+.top-bar__button {
+    background-color: #1F1F1F;
+    color: white;
+}
+
+/*header*/
+
+.header {
+    background-color: #FFD4D0;
+    display: flex;
+    align-content: center;
+}
+
+.header__content {
+    width: 457px;
+}
+
+.header__title {
+    font-size: 20pt;
+    font-weight: 300;
+}
+
+.header__subtitle {
+    font-size: 48pt;
+    font-weight: bold;
+}
+
+.header__subtitle span {
+    color: #FC3314;
+}
+
+.header__text {
+    font-size: 16pt;
+    font-weight: 300;
+}
+
+.header__image {
+    width: 687px;
+}
+
+/*About me*/
+
+.about-me {
+    background-color: #1F1F1F;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.about-me__title {
+    font-size: 36pt;
+    font-weight: bold
+}
+
+.about-me__text {
+    font-size: 16pt;
+    font-weight: 300;
+}
+
+.stats__tittle {
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.stats__numbers {
+    font-size: 64pt;
+    font-weight: bold;
+    color: #FFD4D0;
+}
+
+/*Services*/
+.services {
+    text-align: center;
+    margin: 0;
+}
+.services__title {
+    font-size: 36pt;
+    font-weight: bold
+}
+
+.services__text {
+    font-size: 16pt;
+    font-weight: 300;
+}
+/*colors 
 
 .text-red {
     color: #FC3314;
@@ -48,7 +145,7 @@ a {
     background-color: white;
 }
 
-/* Text styles */
+/* Text styles 
 
 h1 {
     font-size: 20px;
