@@ -1,0 +1,139 @@
+/*------------------------------------*\
+    $CONTENT
+\*------------------------------------*/
+
+/**
+ * CONTENT
+ * RESET.
+ * ELEMENTS.
+ * UTILITIES
+ * FONT-FACE.
+ */
+
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
+    font-size: 100%;
+    font-weight: 300;
+    color: hsl(0, 0%, 12%);
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a, a:visited {
+    color:  hsl(0, 0%, 12%);
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*------------------------------------*\
+    $ELEMENTS
+\*------------------------------------*/
+
+/* HEADERS */
+
+h1,
+.h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+    .h1 span {
+        color: #FC3314;
+    }
+
+h2,
+.h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h3,
+.h3 {
+    font-size: 20px;
+    font-weight: 500; 
+}
+
+/* TOP BAR */
+
+.top-bar {
+    display: flex;
+    padding: 40px 124px;
+}
+
+    .top-bar__logo {
+        min-width: 135px;
+        max-width: 135px;
+    }
+
+    .top-bar__nav {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 64px;
+    }
+
+
+/*------------------------------------*\
+    $UTILITIES
+\*------------------------------------*/
+
+/*background colors*/
+
+.bg-black {
+    background-color: hsl(0, 0%, 12%);
+}
+
+.bg-pink {
+    background-color: #FFD4D0;
+}
+
+/*text*/
+
+.text-white {
+    color: white;
+}
+
+.text-18-bold {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* BUTTONS */
+
+.btn, .btn:visited{
+    min-width: 127px;
+    max-height: 48px;
+    line-height: 48px;
+    background-color: hsl(0, 0%, 12%);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding: 2px 24px;
+    display: inline-block;
+    border: 1px solid hsl(0, 0%, 12%);
+    border-radius: 4px;
+}
+
+ /*------------------------------------*\
+    $FONT-FACE
+\*------------------------------------*/
+    @font-face {
+        font-family: Montserrat;
+        src: url(Montserrat-VariableFont_wght.ttf);
+    }
