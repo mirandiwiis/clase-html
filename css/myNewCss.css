@@ -24,6 +24,8 @@ body {
     font-weight: 300;
     color: hsl(0, 0%, 12%);
     line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 ul {
@@ -91,6 +93,7 @@ h3,
 
 .header-home {
     display: flex;
+    justify-content: space-between;
     padding: 40px 124px;
 }
 
@@ -98,9 +101,9 @@ h3,
     max-width: 457px;
 }
 
-/* ABOUT ME */
+/* ABOUT ME - SERVICES*/
 
-.about-me {
+.section-type-1 {
     padding: 40px 124px;
     display: flex;
     flex-direction: column;
@@ -108,24 +111,34 @@ h3,
     justify-content: center;
 }
 
-.about-me__text {
+.section-type-1__text {
     max-width: 810px;
     text-align: center;
 }
 
-.about-me__stats {
+/* ABOUT ME */
+
+.about-list {
     display: flex;
+    gap: 295px;
 }
 
-.stats__title {
-    font-size: 18px;
-    font-weight: bold;
-}
+    .about-list__title {
+        font-size: 18px;
+        font-weight: bold;
+    }
 
-.stats__numbers {
-    font-size: 64px;
-    font-weight: bold;
-    color: #FFD4D0;
+    .about-list__numbers {
+        font-size: 64px;
+        font-weight: bold;
+        color: #FFD4D0;
+    }
+
+/* SERVICES */
+
+.services-list {
+    display: flex;
+    gap: 64px;
 }
 
 /*------------------------------------*\
