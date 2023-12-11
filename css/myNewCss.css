@@ -101,7 +101,7 @@ h3,
     max-width: 457px;
 }
 
-/* ABOUT ME - SERVICES*/
+/* ABOUT ME - SERVICES - MY PORTFOLIO */
 
 .section-type-1 {
     padding: 40px 124px;
@@ -111,10 +111,10 @@ h3,
     justify-content: center;
 }
 
-.section-type-1__text {
-    max-width: 810px;
-    text-align: center;
-}
+    .section-type-1__text {
+        max-width: 810px;
+        text-align: center;
+    }
 
 /* ABOUT ME */
 
@@ -123,15 +123,23 @@ h3,
     gap: 295px;
 }
 
+    .about-list__group {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     .about-list__title {
         font-size: 18px;
         font-weight: bold;
+        text-align: center;
     }
 
     .about-list__numbers {
         font-size: 64px;
         font-weight: bold;
         color: #FFD4D0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 /* SERVICES */
@@ -140,6 +148,21 @@ h3,
     display: flex;
     gap: 64px;
 }
+
+/* PORTOFIO */
+
+.portfolio-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px;
+    
+}
+
+    .portfolio-list__block {
+        display: flex;
+        flex-direction: column;
+    }
 
 /*------------------------------------*\
     $UTILITIES
