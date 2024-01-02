@@ -3,30 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/myStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@700&family=Montserrat:wght@400;700&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
     <title>SJ Design | UX Designer</title>
 </head>
 
 <body id="all">
 
-    <div class="top-bar">
+    <div class="top-bar bg-pink">
         <div class="top-bar__logo">
-            <img src="../images/Logo.svg" alt="logo">
+            <img src="../content/Logo.svg" alt="logo">
         </div>
 
-        <nav class="main-nav top-bar__nav">
+        <nav class="main-nav top-bar__nav text-18-bold">
             <a class="main-nav__link" href="">About</a>
             <a class="main-nav__link" href="">Services</a>
             <a class="main-nav__link" href="">Portfolio</a>
             <a class="main-nav__link" href="">Blog</a>
         </nav>
 
-
-        <a class="btn" href="">Let's Talk</a>
+        <a class="btn top-bar__btn" href="">Let's Talk</a>
     </div>
 
     <header class="header-home bg-pink">
-        <div>
+        <div class="header-block-1">
             <h1 class="h3">UX Designer</h1>
             <h2 class="h1">Hi There, I'm <span class="text-red">Sarah Jones</span></h2>
             <p>Welcome to my portfolio of captivationg digital experiences. Explore my work and let's create something extraordinary together.</p>
@@ -36,95 +38,99 @@
         </div>
 
         <div>
-            <img src="../images/sarah.png" alt="UX logotype and designer">
+            <img src="../content/sarah.png" alt="UX logotype and designer">
         </div>
     </header>
 
-    <section class="bg-black text-white">
+    <section class="section-type-1 bg-black text-white ">
         <h3 class="h2">About Me</h3>
-        <p>I'm Sarah Jones, a UI/UX designer dedicated to crafting intuitive and visually stunning digital experiences. With a passion for user-centric design. I transform ideas into functional and beautiful interfaces. Let's colaborate and shape the future of design together </p>
-        <dl class="stats">
-            <dt class="stats__title">Projects Done</dt>
-            <dd class="stats__numbers">502</dd>
+        <p class="section-type-1__text">I'm Sarah Jones, a UI/UX designer dedicated to crafting intuitive and visually stunning digital experiences. With a passion for user-centric design. I transform ideas into functional and beautiful interfaces. Let's colaborate and shape the future of design together </p>
+        <dl class="about-list">
+            <div class="about-list__group">
+                <dt class="about-list__title">Projects Done</dt>
+                <dd class="about-list__numbers">502</dd>
+            </div>
 
-            <dt class="stats__title">Years of Experience</dt>
-            <dd class="stats__numbers">10+</dd>
+            <div class="about-list__group">
+                <dt class="about-list__title">Years of Experience</dt>
+                <dd class="about-list__numbers">10+</dd>
+            </div>
 
-            <dt class="stats__title">Clients Served</dt>
-            <dd class="stats__numbers">273+</dd>
+            <div class="about-list__group">
+                <dt class="about-list__title">Clients Served</dt>
+                <dd class="about-list__numbers">273+</dd>
+            </div>
         </dl>
     </section>
 
-    <section >
+    <section class="section-type-1">
         <h3 class="h2">Services</h3>
-        <p>Explore my design srevices, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
-        <ul>
+        <p class="section-type-1__text">Explore my design srevices, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
+        <ul class="services-list">
             <li>
-                <img src="../images/design-vercor.svg" alt="wheel">
+                <img src="../content/design-vercor.svg" alt="wheel">
                 <h6 >Design</h6>
                 <p>I specialize in web development and design, creating visually appealing, user-friendlydigital experiences.</p>
             </li>
 
             <li>
-                <img src="../images/branding.svg" alt="circle">
+                <img src="../content/branding.svg" alt="circle">
                 <h6 >Brandign</h6>
                 <p>I'm branding expert, crefting unique visual identities that tell your story and resonate with your audience</p>
             </li>
 
             <li>
-                <img src="../images/ux-research.svg" alt="search">
+                <img src="../content/ux-research.svg" alt="search">
                 <h6 class="services-list__tittle">UX Research</h6>
                 <p class="services-list__text">"I specialize in user experience research, colaborating on web development, and ensuring user friendly digital products.</p>
             </li>
 
             <li>
-                <img src="../images/usability.svg" alt="check list">
+                <img src="../content/usability.svg" alt="check list">
                 <h6 class="services-list__tittle">Usability Testing</h6>
                 <p class="services-list__text">I perform usability testing and optimize designs websites based on real-user feedback for seamless interactions.</p>
             </li>
         </ul>
     </section>
 
-    <section class="section">  
-        <div>
-            <h3 class="h2">My Portfolio</h3>
-            <p>Explore my design services, from user interface and experience to prototyping and testing. Let's craft exceptional digitalexperiences together.</p>
-        </div>
+    <section class="section-type-1">  
+        <h3 class="h2">My Portfolio</h3>
+        <p class="section-type-1__text">Explore my design services, from user interface and experience to prototyping and testing. Let's craft exceptional digitalexperiences together.</p>
 
         <div>
-            <ul>
-                <li>
-                    <img  src="../images/educationalplatform.jpg" alt="lynnfisher landing page" width="300px">
+            <ul class="portfolio-list">
+                <li class="portfolio-list__block">
+                    <img  src="../content/educationalplatform.jpg" alt="lynnfisher landing page" width="300px">
                     <a href="">Educational Plataform</a>
                     <h4 >Web Design / Usability Testing</h4>
                 </li>
 
-                <li>
-                    <img src="../images/travel-app.jpg" alt="web design mock-up" width="300px">
+                <li class="portfolio-list__block">
+                    <img src="../content/travel-app.jpg" alt="web design mock-up" width="300px">
                     <a href="">Travel App Design</a>
                     <h4 >UX Research / App Design</h4>
                 </li>
 
-                <li>
-                    <img src="../images/personal-page.jpg" alt="web design" width="300px">
+                <li class="portfolio-list__block">
+                    <img src="../content/personal-page.jpg" alt="web design" width="300px">
                     <a href="">Personal Page</a>
                     <h4 >Web Design</h4>
                 </li>
         
-                <li>
-                    <img src="../images/furniture.jpg" alt="app mobile design" width="300px">
+                <li class="portfolio-list__block">
+                    <img src="../content/furniture.jpg" alt="app mobile design" width="300px">
                     <a href="">Furniture Mobile App</a>
                     <h4 >App Design</h4>
                 </li>
 
-                <li>
-                    <img src="../images/coffe-house.jpg" alt="coffe web design" width="300px">
+                <li class="portfolio-list__block">
+                    <img src="../content/coffe-house.jpg" alt="coffe web design" width="300px">
                     <a href="">Coffe House Landing Page</a>
                     <h4 >UX Research / web design</h4>
                 </li>
 
-                <li>
-                    <img src="../images/home-services.jpg" alt="" width="300px">
+                <li class="portfolio-list__block">
+                    <img src="../content/home-services.jpg" alt="" width="300px">
                     <a href="">Home Services Page</a>
                     <h4 >Web Design / Marketing</h4>
                 </li>
@@ -162,17 +168,17 @@
 
             <ul>
                 <li>
-                    <img src="../images/phone.svg" alt="phone icon">
+                    <img src="../content/phone.svg" alt="phone icon">
                     <p>+1205 5872 321</p>
                 </li>
 
                 <li>
-                    <img src="../images/mail.svg" alt="email icon">
+                    <img src="../content/mail.svg" alt="email icon">
                     <p>contact@sarajonesdesign.com</p>
                 </li>
 
                 <li>
-                    <img src="../images/ubication.svg" alt="ubication icon">
+                    <img src="../content/ubication.svg" alt="ubication icon">
                     <p>1234 Design Street,Creativeville, Webland,Imaginary State, 98765</p>
                 </li>
             </ul>
@@ -180,10 +186,10 @@
 
         <div>
             <li>
-                <img src="../images/twitter.svg" alt="twitter logo">
-                <img src="../images/insta.svg" alt="insta logo">
-                <img src="../images/ball.svg" alt="idk logo">
-                <img src="../images/facebook.svg" alt="facebook logo">
+                <img src="../content/twitter.svg" alt="twitter logo">
+                <img src="../content/insta.svg" alt="insta logo">
+                <img src="../content/ball.svg" alt="idk logo">
+                <img src="../content/facebook.svg" alt="facebook logo">
             </li>
 
             <form action="">
@@ -211,7 +217,7 @@
             <li>
                 <a href="">About</a>
                 <a href="">Services</a>
-                <a href="#all"><img src="../images/Logo-white-s.svg" alt="SJ Design logotype"></a>
+                <a href="#all"><img src="../content/Logo-white-s.svg" alt="SJ Design logotype"></a>
                 <a href="">Portfolio</a>
                 <a href="">Blog</a>
             </li>
@@ -220,10 +226,10 @@
         <p>Follow me on social media:</p>
         
         <li>
-            <a href=""><img src="../images/Instagram-white.svg" alt="instagram logotype"></a>
-            <a href=""><img src="../images/Twitter-white.svg" alt="twitter logotype"></a>
-            <a href=""><img src="../images/Dribbble-white.svg" alt="idk logotype"></a>
-            <a href=""><img src="../images/Facebook-white.svg" alt="facebook logotype"></a>
+            <a href=""><img src="../content/Instagram-white.svg" alt="instagram logotype"></a>
+            <a href=""><img src="../content/Twitter-white.svg" alt="twitter logotype"></a>
+            <a href=""><img src="../content/Dribbble-white.svg" alt="idk logotype"></a>
+            <a href=""><img src="../content/Facebook-white.svg" alt="facebook logotype"></a>
         </li>  
     </footer>
 
