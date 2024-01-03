@@ -30,6 +30,9 @@ body {
 
 ul {
     list-style-type: none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 a, a:visited {
@@ -40,6 +43,7 @@ a, a:visited {
 img {
     max-width: 100%;
 }
+
 
 /*------------------------------------*\
     $ELEMENTS
@@ -98,17 +102,26 @@ h6 {
 
 .header-home {
     display: flex;
-    justify-content: space-between;
-    padding: 40px 124px;
+    padding: 64px calc((100% - 1200px)/2) 0 calc((100% - 1200px)/2);
 }
 
-.header-block-1 {
-    max-width: 457px;
-}
+    .header__content-text {
+        max-width: 457px;
+        min-width: 300px;
+    }
 
-/* ABOUT ME - SERVICES - MY PORTFOLIO */
+    .header__content-image {
+            min-width: 687px;
+            min-height: 487px;
+            max-width: 687px;
+            max-height: 487px;
+            margin-left: 48px;
+            
+    }
 
-.section-type-1 {
+/* SECTIONS */
+
+.section-home {
     padding: 40px 124px;
     display: flex;
     flex-direction: column;
@@ -116,7 +129,7 @@ h6 {
     justify-content: center;
 }
 
-    .section-type-1__text {
+    .section-home__text {
         max-width: 810px;
         text-align: center;
     }
@@ -161,23 +174,31 @@ h6 {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 64px;
-    
+    max-width: 1200px;
 }
+
+    .portfolio-list:first-of-type {
+        margin-bottom: 64px;
+    }
+
 
     .portfolio-list__block {
         display: flex;
         flex-direction: column;
     }
 
+    .portfolio-list__block img {
+        max-width: 300px;
+    }
 /*------------------------------------*\
     $UTILITIES
 \*------------------------------------*/
 
 /*background colors*/
 
-.bg-bla
 
-ck {
+
+.bg-black {
     background-color: hsl(0, 0%, 12%);
 }
 
@@ -190,10 +211,9 @@ ck {
 }
 
 .bg-pink-and-grey {
-    background-color: #FFD4D0;  
-
+    background: #FFD4D0;
+    background: linear-gradient(to bottom,  #FFD4D0 318px, hsl(0, 0%, 97%) 318px);  
 }
-
 
 
 /*text*/

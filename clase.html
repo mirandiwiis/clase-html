@@ -24,11 +24,11 @@
             <a class="main-nav__link" href="">Blog</a>
         </nav>
 
-        <a class="btn top-bar__btn" href="">Let's Talk</a>
+        <a class="btn" href="">Let's Talk</a>
     </div>
 
     <header class="header-home bg-pink">
-        <div class="header-block-1">
+        <div class="header__content-text">
             <h1 class="h3">UX Designer</h1>
             <h2 class="h1">Hi There, I'm <span class="text-red">Sarah Jones</span></h2>
             <p>Welcome to my portfolio of captivationg digital experiences. Explore my work and let's create something extraordinary together.</p>
@@ -37,14 +37,14 @@
             <a class="btn--white" href="">Portfolio</a>
         </div>
 
-        <div>
+        <div class="header__content-image">
             <img src="../content/sarah.png" alt="UX logotype and designer">
         </div>
     </header>
 
-    <section class="section-type-1 bg-black text-white ">
-        <h3 class="h2">About Me</h3>
-        <p class="section-type-1__text">I'm Sarah Jones, a UI/UX designer dedicated to crafting intuitive and visually stunning digital experiences. With a passion for user-centric design. I transform ideas into functional and beautiful interfaces. Let's colaborate and shape the future of design together </p>
+    <section class="section-home bg-black text-white ">
+        <h3 class="h2 section-home__tittle">About Me</h3>
+        <p class="section-home__text">I'm Sarah Jones, a UI/UX designer dedicated to crafting intuitive and visually stunning digital experiences. With a passion for user-centric design. I transform ideas into functional and beautiful interfaces. Let's colaborate and shape the future of design together </p>
         <dl class="about-list">
             <div class="about-list__group">
                 <dt class="about-list__title">Projects Done</dt>
@@ -63,9 +63,9 @@
         </dl>
     </section>
 
-    <section class="section-type-1 bg-grey">
-        <h3 class="h2">Services</h3>
-        <p class="section-type-1__text">Explore my design srevices, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
+    <section class="section-home bg-grey">
+        <h3 class="h2 section-home__tittle">Services</h3>
+        <p class="section-home__text">Explore my design srevices, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
         <ul class="services-list">
             <li>
                 <img src="../content/design-vercor.svg" alt="wheel">
@@ -93,44 +93,46 @@
         </ul>
     </section>
 
-    <section class="section-type-1">  
+    <section class="section-home bg-pink-and-grey">  
         <h3 class="h2">My Portfolio</h3>
-        <p class="section-type-1__text">Explore my design services, from user interface and experience to prototyping and testing. Let's craft exceptional digitalexperiences together.</p>
+        <p class="section-home__text">Explore my design services, from user interface and experience to prototyping and testing. Let's craft exceptional digitalexperiences together.</p>
 
         <div>
             <ul class="portfolio-list">
                 <li class="portfolio-list__block">
-                    <img  src="../content/educationalplatform.jpg" alt="lynnfisher landing page" width="300px">
+                    <img  src="../content/educationalplatform.jpg" alt="lynnfisher landing page">
                     <a href="">Educational Plataform</a>
                     <h4 >Web Design / Usability Testing</h4>
                 </li>
 
                 <li class="portfolio-list__block">
-                    <img src="../content/travel-app.jpg" alt="web design mock-up" width="300px">
+                    <img src="../content/travel-app.jpg" alt="web design mock-up">
                     <a href="">Travel App Design</a>
                     <h4 >UX Research / App Design</h4>
                 </li>
 
                 <li class="portfolio-list__block">
-                    <img src="../content/personal-page.jpg" alt="web design" width="300px">
+                    <img src="../content/personal-page.jpg" alt="web design">
                     <a href="">Personal Page</a>
                     <h4 >Web Design</h4>
                 </li>
-        
+            </ul>
+
+            <ul class="portfolio-list">
                 <li class="portfolio-list__block">
-                    <img src="../content/furniture.jpg" alt="app mobile design" width="300px">
+                    <img src="../content/furniture.jpg" alt="app mobile design">
                     <a href="">Furniture Mobile App</a>
                     <h4 >App Design</h4>
                 </li>
 
                 <li class="portfolio-list__block">
-                    <img src="../content/coffe-house.jpg" alt="coffe web design" width="300px">
+                    <img src="../content/coffe-house.jpg" alt="coffe web design">
                     <a href="">Coffe House Landing Page</a>
                     <h4 >UX Research / web design</h4>
                 </li>
 
                 <li class="portfolio-list__block">
-                    <img src="../content/home-services.jpg" alt="" width="300px">
+                    <img src="../content/home-services.jpg" alt="">
                     <a href="">Home Services Page</a>
                     <h4 >Web Design / Marketing</h4>
                 </li>
@@ -138,9 +140,9 @@
         </div>
     </section>
 
-    <section>
+    <section class="section-home">
         <h3 class="h2">Core Design Skills</h3>
-        <p>I excel in essential design skills, creating visually stunning and functional</p>
+        <p class="section-home__text">I excel in essential design skills, creating visually stunning and functional digital experiences. From UI design to UX research, my passion is to craft effective and memorable digital solutions.</p>
 
         <label for="interactiondesign"> Interaction design </label>
         <progress id="interactiondesign" max="100" value="60"> 60% </progress>
