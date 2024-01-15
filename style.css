@@ -44,6 +44,12 @@ img {
     max-width: 100%;
 }
 
+progress[value] {
+    -webkit-appearance:none;
+    -moz-appearance:none;        
+    appearance: none;
+  }
+
 
 /*------------------------------------*\
     $ELEMENTS
@@ -160,12 +166,20 @@ h6 {
         margin-right: auto;
     }
 
+
 /* SERVICES */
 
 .services-list {
     display: flex;
     gap: 64px;
+    max-width: 1200px;
+    margin-top: 32px;
 }
+
+    .services-list p {
+        width: 242px;
+    }
+
 
 /* PORTOFIO */
 
@@ -190,13 +204,66 @@ h6 {
     .portfolio-list__block img {
         max-width: 300px;
     }
+
+
+/* CORE DESIGN SKILLS */
+
+.skills-stats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px;
+    max-width: 1200px;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+    .skills-stats__block {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+
+    .skills-stats__progress {
+        text-align: right;
+        height: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .skills-stats__progress:after {
+        content: attr(value)'%';
+    }
+
+    .skills-stats__progress[value] {
+        --color: hsl(0, 0%, 12%); /* the progress color */
+        --background: hsl(0, 0%, 88%); /* the background color */
+      
+        width: 420px;
+        margin: 0;
+      }
+
+      .skills-stats__progress[value]::-webkit-progress-bar {
+        background: var(--background);
+      }
+
+      .skills-stats__progress[value]::-webkit-progress-value {
+        background: var(--color);
+      }
+
+
+/* GET IN TOUCH */
+
+
+
 /*------------------------------------*\
     $UTILITIES
 \*------------------------------------*/
 
 /*background colors*/
-
-
 
 .bg-black {
     background-color: hsl(0, 0%, 12%);
@@ -224,6 +291,11 @@ h6 {
 
 .text-18-bold {
     font-size: 18px;
+    font-weight: bold;
+}
+
+.text-16-bold {
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -259,11 +331,3 @@ h6 {
     border-radius: 3px;
     margin-left: 10px;
 }
-
- /*------------------------------------*\
-    $FONT-FACE
-\*------------------------------------*/
-    @font-face {
-        font-family: Montserrat;
-        src: url(Montserrat-VariableFont_wght.ttf);
-    }
